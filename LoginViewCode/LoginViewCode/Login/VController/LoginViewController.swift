@@ -6,9 +6,11 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController {
     
+    var auth:Auth?
     var loginScreen: LoginScreen?
     
     override func loadView() {
@@ -20,6 +22,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         self.loginScreen?.delegate(delegate: self)
         self.loginScreen?.configTextFieldDelegate(delegate: self)
+        self.auth = Auth.auth()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -30,7 +33,22 @@ class LoginViewController: UIViewController {
 
 extension LoginViewController:LoginScreenProtocol{
     func actionLoginButton() {
-        print("Deu certo login")
+        guard let login = self.loginScreen else {return}
+        
+        self.auth?.signIn(withEmail: login.getEmail(), password: login.getPassword(), completion: { usuario, error in
+            
+            if error != nil{
+                print("Dados incorretos")
+            }else{
+                if usuario == nil{
+                    print("Problema inesperado, tente mais tarde!")
+                }else{
+                    print("Login efetuado - dados batento ***")
+                }
+                    
+            }
+        })
+        
     }
     
     func actionRegisterButton() {

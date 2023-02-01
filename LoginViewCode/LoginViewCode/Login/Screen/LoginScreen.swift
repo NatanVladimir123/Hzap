@@ -151,6 +151,13 @@ class LoginScreen: UIView {
         }
     }
     
+    func getEmail() -> String{
+        return emailTextField.text ?? ""
+    }
+    func getPassword() -> String{
+        return passwordTextField.text ?? ""
+    }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5288A6702989DBAD00740BBE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5288A66F2989DBAD00740BBE /* GoogleService-Info.plist */; };
 		52E068AE29832D4400528A03 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E068AD29832D4400528A03 /* RegisterViewController.swift */; };
 		52E0778D29845BDB005A79AF /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E0778C29845BDB005A79AF /* RegisterScreen.swift */; };
 		52FA8BB1297F0FDD0071C36E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FA8BB0297F0FDD0071C36E /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		2EA66BE6D9CF2D3986AE5529 /* Pods-LoginViewCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginViewCode.release.xcconfig"; path = "Target Support Files/Pods-LoginViewCode/Pods-LoginViewCode.release.xcconfig"; sourceTree = "<group>"; };
 		33575E872D23CFDA54B60D96 /* Pods_LoginViewCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginViewCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5288A66F2989DBAD00740BBE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		52E068AD29832D4400528A03 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		52E0778C29845BDB005A79AF /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
 		52FA8BAD297F0FDD0071C36E /* LoginViewCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginViewCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +101,7 @@
 				52FA8BB9297F0FDE0071C36E /* Assets.xcassets */,
 				52FA8BBB297F0FDE0071C36E /* LaunchScreen.storyboard */,
 				52FA8BBE297F0FDE0071C36E /* Info.plist */,
+				5288A66F2989DBAD00740BBE /* GoogleService-Info.plist */,
 			);
 			path = LoginViewCode;
 			sourceTree = "<group>";
@@ -134,7 +137,6 @@
 				A4D3E5DD69FBDDBD7C09ACD6 /* Pods-LoginViewCode.debug.xcconfig */,
 				2EA66BE6D9CF2D3986AE5529 /* Pods-LoginViewCode.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,6 +210,7 @@
 			files = (
 				52FA8BBD297F0FDE0071C36E /* LaunchScreen.storyboard in Resources */,
 				52FA8BBA297F0FDE0071C36E /* Assets.xcassets in Resources */,
+				5288A6702989DBAD00740BBE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

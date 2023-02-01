@@ -80,8 +80,15 @@ class RegisterScreen: UIView {
         super.init(frame: frame)
         self.configBackgGroud()
         self.configSuperView()
-        self.setUpContrainsts()
+      //  ----------------------
+        self.configImageAddUser()
+        self.configBackButton()
+        self.configEmailTextField()
+        self.configPasswordTextField()
+        self.configRegisterButton()
+      //  ---------------------
         self.habilitaButton(false)
+
     }
     
     // **** colocar todos objetos aqui ****
@@ -135,11 +142,21 @@ class RegisterScreen: UIView {
             
     }
     
+    //func returno as variaveis para cadastro *******
+    public func getEmail() -> String{
+        return self.emailTextField.text ?? ""
+    }
+    
+    public func getPassword() -> String{
+        return self.passwordTextField.text ?? ""
+    }
+    // ****************
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func setUpContrainsts(){
+    /*private func setUpContrainsts(){
         NSLayoutConstraint.activate([
         
             //imagem
@@ -169,11 +186,52 @@ class RegisterScreen: UIView {
             self.registerButton.leadingAnchor.constraint(equalTo: self.emailTextField.leadingAnchor),
             self.registerButton.trailingAnchor.constraint(equalTo: self.emailTextField.trailingAnchor),
             self.registerButton.heightAnchor.constraint(equalTo: self.emailTextField.heightAnchor)
-            
-            
-        
-            
         ])
+    } */
+   
+    //imagem de usuario
+    func configImageAddUser (){
+        self.imageAddUser.snp.makeConstraints { make in
+            make.top.equalTo(self.safeAreaLayoutGuide.snp.top).offset(20)
+            make.centerX.equalToSuperview()
+            make.width.equalTo(150)
+            make.height.equalTo(150)
+        }
+    }
+    
+    func configBackButton() {
+        self.backButton.snp.makeConstraints { make in
+            make.top.equalTo(self.imageAddUser.snp.top)
+            make.leading.equalTo(20)
+        }
+    }
+    
+    func configEmailTextField(){
+        self.emailTextField.snp.makeConstraints { make in
+            make.top.equalTo(self.imageAddUser.snp.bottom).offset(10)
+            make.leading.equalToSuperview().offset(20)
+            make.trailing.equalToSuperview().inset(20)
+            make.height.equalTo(45)
+        }
+    }
+    
+    func configPasswordTextField(){
+        self.passwordTextField.snp.makeConstraints { make in
+            make.top.equalTo(self.emailTextField.snp.bottom).offset(15)
+            make.leading.equalTo(self.emailTextField.snp.leading)
+            make.trailing.equalTo(self.emailTextField.snp.trailing)
+            make.height.equalTo(self.emailTextField.snp.height)
+        }
+    }
+    
+    func configRegisterButton(){
+        self.registerButton.snp.makeConstraints { make in
+            make.top.equalTo(self.passwordTextField.snp.bottom).offset(20)
+            make.leading.equalTo(self.emailTextField.snp.leading)
+            make.trailing.equalTo(self.emailTextField.snp.trailing)
+            make.height.equalTo(self.emailTextField.snp.height)
+        }
     }
     
 }
+
