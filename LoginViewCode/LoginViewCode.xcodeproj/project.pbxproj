@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		524AC317298BE719004C9A54 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524AC316298BE719004C9A54 /* HomeViewController.swift */; };
+		524AC319298BE914004C9A54 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524AC318298BE914004C9A54 /* HomeScreen.swift */; };
+		524AC31C298C9D97004C9A54 /* UserDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524AC31B298C9D97004C9A54 /* UserDetailTableViewCell.swift */; };
+		524AC31F298CA378004C9A54 /* DataUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524AC31E298CA378004C9A54 /* DataUser.swift */; };
 		5288A6702989DBAD00740BBE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5288A66F2989DBAD00740BBE /* GoogleService-Info.plist */; };
+		528D0C4A298B2566001E5822 /* AlertaPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D0C49298B2566001E5822 /* AlertaPopUp.swift */; };
 		52E068AE29832D4400528A03 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E068AD29832D4400528A03 /* RegisterViewController.swift */; };
 		52E0778D29845BDB005A79AF /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E0778C29845BDB005A79AF /* RegisterScreen.swift */; };
 		52FA8BB1297F0FDD0071C36E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FA8BB0297F0FDD0071C36E /* AppDelegate.swift */; };
@@ -22,7 +27,12 @@
 /* Begin PBXFileReference section */
 		2EA66BE6D9CF2D3986AE5529 /* Pods-LoginViewCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginViewCode.release.xcconfig"; path = "Target Support Files/Pods-LoginViewCode/Pods-LoginViewCode.release.xcconfig"; sourceTree = "<group>"; };
 		33575E872D23CFDA54B60D96 /* Pods_LoginViewCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginViewCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		524AC316298BE719004C9A54 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		524AC318298BE914004C9A54 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		524AC31B298C9D97004C9A54 /* UserDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailTableViewCell.swift; sourceTree = "<group>"; };
+		524AC31E298CA378004C9A54 /* DataUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUser.swift; sourceTree = "<group>"; };
 		5288A66F2989DBAD00740BBE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		528D0C49298B2566001E5822 /* AlertaPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertaPopUp.swift; sourceTree = "<group>"; };
 		52E068AD29832D4400528A03 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		52E0778C29845BDB005A79AF /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
 		52FA8BAD297F0FDD0071C36E /* LoginViewCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginViewCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +58,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		524AC314298BE675004C9A54 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				524AC316298BE719004C9A54 /* HomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		524AC315298BE6BD004C9A54 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				524AC318298BE914004C9A54 /* HomeScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		524AC31A298C9D49004C9A54 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				524AC31B298C9D97004C9A54 /* UserDetailTableViewCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		524AC31D298CA361004C9A54 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				524AC31E298CA378004C9A54 /* DataUser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		528D0C48298B254F001E5822 /* Alerta */ = {
+			isa = PBXGroup;
+			children = (
+				528D0C49298B2566001E5822 /* AlertaPopUp.swift */,
+			);
+			path = Alerta;
+			sourceTree = "<group>";
+		};
+		528D0C4B298B5142001E5822 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				524AC31D298CA361004C9A54 /* Model */,
+				524AC315298BE6BD004C9A54 /* Screen */,
+				524AC314298BE675004C9A54 /* ViewController */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		52E068AA29832C8500528A03 /* SingIn */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +154,9 @@
 		52FA8BAF297F0FDD0071C36E /* LoginViewCode */ = {
 			isa = PBXGroup;
 			children = (
+				524AC31A298C9D49004C9A54 /* cell */,
+				528D0C4B298B5142001E5822 /* Home */,
+				528D0C48298B254F001E5822 /* Alerta */,
 				52E068AA29832C8500528A03 /* SingIn */,
 				52FA8BC4297F593E0071C36E /* Login */,
 				52FA8BB0297F0FDD0071C36E /* AppDelegate.swift */,
@@ -266,9 +329,14 @@
 				52E0778D29845BDB005A79AF /* RegisterScreen.swift in Sources */,
 				52FA8BB5297F0FDD0071C36E /* LoginViewController.swift in Sources */,
 				52E068AE29832D4400528A03 /* RegisterViewController.swift in Sources */,
+				524AC317298BE719004C9A54 /* HomeViewController.swift in Sources */,
+				524AC31F298CA378004C9A54 /* DataUser.swift in Sources */,
 				52FA8BCA297F5A240071C36E /* LoginScreen.swift in Sources */,
+				524AC31C298C9D97004C9A54 /* UserDetailTableViewCell.swift in Sources */,
+				524AC319298BE914004C9A54 /* HomeScreen.swift in Sources */,
 				52FA8BB1297F0FDD0071C36E /* AppDelegate.swift in Sources */,
 				52FA8BB3297F0FDD0071C36E /* SceneDelegate.swift in Sources */,
+				528D0C4A298B2566001E5822 /* AlertaPopUp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
